@@ -1,0 +1,5 @@
+username: Emperor
+email: emperor@example.com
+password: palpatine
+
+Acceso: 127.0.0.1:8000/cloneTroopersApp/admin

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>Clone Troopers Army</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'cloneTroopersApp/style.css' %}">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Star Wars Army</h1>
+		</div>
+	</div>
+	<div class="container">
+		{% if soldiers %}
+			{% for soldier in soldiers %}
+				<div class="row">
+					<p>{{ soldier.id }}: {{ soldier.name }} - {{ soldier.soldier_type }}</p>
+				</div>
+			{% endfor %}
+		{% endif %}
+	</div>
+</body>
+</html>
+
